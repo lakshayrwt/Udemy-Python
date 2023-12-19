@@ -7,11 +7,15 @@ if guess < answer:
     guess = int(input())
     if guess == answer:
         print("you finally guessed it")
+    else:
+        print("sorry, you have not guessed correctly")
 elif guess > answer:
     print("please guess lower")
     guess = int(input())
     if guess == answer:
         print("you finally guessed it")
+    else:
+        print("sorry, you have not guessed correctly")
 else:
     print("Hooray you have guessed correct")
 
