@@ -5,9 +5,13 @@ guess = int(input())
 if guess < answer:
     print("please guess higher")
     guess = int(input())
+    if guess == answer:
+        print("you finally guessed it")
 elif guess > answer:
     print("please guess lower")
     guess = int(input())
+    if guess == answer:
+        print("you finally guessed it")
 else:
     print("Hooray you have guessed correct")
 
