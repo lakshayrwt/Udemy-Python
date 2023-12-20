@@ -2,22 +2,35 @@ answer = 5
 print("please guess no. btw 1 and 10:")
 guess = int(input())
 
-if guess < answer:
-    print("please guess higher")
+if guess != answer:
+    if guess < answer:
+        print("please guess higher")
+    else:
+        print("please guess lower")
     guess = int(input())
     if guess == answer:
-        print("you finally guessed it")
+        print("hooray you got it correct")
     else:
-        print("sorry, you have not guessed correctly")
-elif guess > answer:
-    print("please guess lower")
-    guess = int(input())
-    if guess == answer:
-        print("you finally guessed it")
-    else:
-        print("sorry, you have not guessed correctly")
+        print("sorry you failed the game")
 else:
-    print("Hooray you have guessed correct")
+    print("Bullseye")
+
+# if guess < answer:
+#     print("please guess higher")
+#     guess = int(input())
+#     if guess == answer:
+#         print("you finally guessed it")
+#     else:
+#         print("sorry, you have not guessed correctly")
+# elif guess > answer:
+#     print("please guess lower")
+#     guess = int(input())
+#     if guess == answer:
+#         print("you finally guessed it")
+#     else:
+#         print("sorry, you have not guessed correctly")
+# else:
+#     print("Hooray you have guessed correct")
 
 x = 5
 y = 7
