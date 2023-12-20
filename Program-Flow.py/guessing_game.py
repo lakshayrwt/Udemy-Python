@@ -2,18 +2,31 @@ answer = 5
 print("please guess no. btw 1 and 10:")
 guess = int(input())
 
-if guess != answer:
-    if guess < answer:
-        print("please guess higher")
-    else:
+if guess == answer:
+    print("bullseye")
+elif guess != answer:
+    if  guess > answer:
         print("please guess lower")
+    else:
+        print("please guess higher")
     guess = int(input())
     if guess == answer:
-        print("hooray you got it correct")
+        print("you guessed it")
     else:
-        print("sorry you failed the game")
-else:
-    print("Bullseye")
+        print("sorry, you couldn't guess it")
+
+# if guess != answer:
+#     if guess < answer:
+#         print("please guess higher")
+#     else:
+#         print("please guess lower")
+#     guess = int(input())
+#     if guess == answer:
+#         print("hooray you got it correct")
+#     else:
+#         print("sorry you failed the game")
+# else:
+#     print("Bullseye")
 
 # if guess < answer:
 #     print("please guess higher")
