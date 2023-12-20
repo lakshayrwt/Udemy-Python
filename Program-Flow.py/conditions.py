@@ -6,3 +6,9 @@ else:
         print("too young brat")
     elif age > 60:
         print("now embrace death")
+print("*" * 225)
+
+if age < 16 or age >60:
+    print("enjoy your feee time")
+else:
+    print("please work till death")
