@@ -5,7 +5,10 @@ guess = 0
 print("please guess no. btw 1 and {}:".format(highest))
 while guess != answer:
     guess = int(input())
-    if guess == answer:
+    if guess == 0:
+        print("Game Over")
+        break
+    elif guess == answer:
         print("well done, you guessed it")
         break
     else:
