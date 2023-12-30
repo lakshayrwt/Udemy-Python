@@ -3,19 +3,16 @@ highest = 10
 answer = random.randint(1,highest)
 guess = 0
 print("please guess no. btw 1 and {}:".format(highest))
-guess = int(input())
 while guess != answer:
+    guess = int(input())
     if guess == answer:
-        print("bullseye")
-    elif guess != answer:
-        if  guess > answer:
-            print("please guess lower")
-        else:
+        print("well done, you guessed it")
+        break
+    else:
+        if guess < answer:
             print("please guess higher")
-        guess = int(input())
-        if guess == answer:
-            print("you guessed it")
-
+        else:
+            print("please guess lower")
 # if guess != answer:
 #     if guess < answer:
 #         print("please guess higher")
