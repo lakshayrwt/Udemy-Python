@@ -1,19 +1,19 @@
-answer = 5
-print("please guess no. btw 1 and 10:")
+import random
+highest = 10
+answer = random.randint(1,highest)
+print("please guess no. btw 1 and {}:".format(highest))
 guess = int(input())
-
-if guess == answer:
-    print("bullseye")
-elif guess != answer:
-    if  guess > answer:
-        print("please guess lower")
-    else:
-        print("please guess higher")
-    guess = int(input())
+while guess != answer:
     if guess == answer:
-        print("you guessed it")
-    else:
-        print("sorry, you couldn't guess it")
+        print("bullseye")
+    elif guess != answer:
+        if  guess > answer:
+            print("please guess lower")
+        else:
+            print("please guess higher")
+        guess = int(input())
+        if guess == answer:
+            print("you guessed it")
 
 # if guess != answer:
 #     if guess < answer:
@@ -61,4 +61,4 @@ tree2 = "Eve"
 if tree1 == tree2 :
     print("The trees are the same")
 else:
-    print("The trees are different")
+    print("The trees are different") 
