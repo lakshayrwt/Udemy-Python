@@ -1,6 +1,7 @@
 import random
 highest = 10
 answer = random.randint(1,highest)
+guess = 0
 print("please guess no. btw 1 and {}:".format(highest))
 guess = int(input())
 while guess != answer:
