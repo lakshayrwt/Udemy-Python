@@ -17,3 +17,4 @@ for future_option in career_options:
         break
     else:
         print("Please select from the list given")
+        print(career_options)
