@@ -8,3 +8,12 @@ print(id(another_list))
 shopping_list += ["cookies"]
 
 print(id(shopping_list))
+print(another_list)
+
+a = b = c = d = e = f = another_list
+
+print(a)
+print("add nutella")
+b.append("nutella")
+print(c)
+print(d)
