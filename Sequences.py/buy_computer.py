@@ -1,3 +1,10 @@
+available_parts = ["monitor",
+                    "CPU",
+                    "keyboard",
+                    "mouse",
+                    "mouse pad",
+                    "HDMI cable"
+                    ]
 current_choice = "-"
 computer_parts = []
 
@@ -19,13 +26,7 @@ while current_choice != "0":
 
     else:
         print("select from the following options")
-        print("1: Monitor")
-        print("2: CPU")
-        print("3: keyboard")
-        print("4: mouse")
-        print("5: mouse pad")
-        print("6: HDMI cable")
-        print("0: to finish")
-
+        for part in available_parts:
+            print("{0}: {1}".format(available_parts.index(part) + 1 , part))
     current_choice = input()
 print(computer_parts)
