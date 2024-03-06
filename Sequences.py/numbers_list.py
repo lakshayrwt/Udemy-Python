@@ -8,3 +8,5 @@ print(max(odd))
 print()
 print(len(even))
 print(len(odd))
+
+print("yomoyomoyoyo".count("yo"))
