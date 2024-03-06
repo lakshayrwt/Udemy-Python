@@ -10,3 +10,6 @@ print(len(even))
 print(len(odd))
 
 print("yomoyomoyoyo".count("yo"))
+
+even.append(10)
+print(max(even))
