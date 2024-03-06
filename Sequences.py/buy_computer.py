@@ -26,7 +26,7 @@ while current_choice != "0":
 
     else:
         print("select from the following options")
-        for part in available_parts:
-            print("{0}: {1}".format(available_parts.index(part) + 1 , part))
+        for number, part in enumerate(available_parts):
+            print("{0}: {1}".format(number+ 1 , part))
     current_choice = input()
 print(computer_parts)
