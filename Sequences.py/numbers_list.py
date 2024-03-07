@@ -13,3 +13,10 @@ print("yomoyomoyoyo".count("yo"))
 
 even.append(10)
 print(max(even))
+
+even.extend(odd)
+print(even)
+even.sort()
+print(even)
+even.sort(reverse=True)
+print(even)
