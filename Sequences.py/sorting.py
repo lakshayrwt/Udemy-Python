@@ -10,3 +10,15 @@ print(another_numbers)
 numbers.sort()
 print(numbers)
 
+missing_words = sorted("the quick brown fox jumped over the lazy dog", 
+                       key=str.casefold)
+print(missing_words)
+
+names = ["Kuroko",
+         "kise",
+         "Aomine",
+         "midorima",
+         "Murakibara",
+         "Akashi"]
+names.sort(key=str.casefold)
+print(names)
